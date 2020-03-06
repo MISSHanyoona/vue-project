@@ -97,8 +97,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@mixin range-flex{
+<style lang="less" scoped>
+.range-flex{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -110,7 +110,7 @@ export default {
 		transition: 1s all;
 		user-select: none;
 		color: #333;
-		@include range-flex;
+		.range-flex;
 		height: 45px; /*no*/
 		&.success{
 			background-color: #7AC23C;
@@ -128,7 +128,7 @@ export default {
 			background-color: #fff;
 			border: 1px solid #bbb;
 			cursor: pointer;
-			@include range-flex;
+			.range-flex;
 		}
 	}
 }
